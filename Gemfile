@@ -8,11 +8,11 @@ gem 'rails', '3.2.12'
 gem 'sqlite3'
 
 group :development do 
-	gem 'rspec-rails', '2.0.0.beta.18'
+	gem 'rspec-rails'
 end
 
 group :test do 
-	gem 'rspec',  '2.0.0.beta.18'
+	gem 'rspec'
 end
 
 # Gems used only for assets and not required
