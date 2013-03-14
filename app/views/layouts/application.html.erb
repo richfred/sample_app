@@ -7,23 +7,23 @@
     	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     	<![endif]-->
 
-		<%= stylesheet_link_tag 'screen', :media => 'screen' %>
-		<%= stylesheet_link_tag 'print', :media => 'print' %>
-		<!--[if lt IE 8]><%= stylesheet_link_tag 'ie' %><![endif]-->
-		<%= stylesheet_link_tag 'custom', :media=> 'screen' %>
+		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+		<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+		<%= stylesheet_link_tag 'custom', :media => 'screen' %>
 	</head>
 	<body>
 		<div class="container">
 			<header>
-				<%= image_tag("logo.png", :alt => "Sample App", :class => "round" ) %>
+				<%= image_tag("/assets/logo.png", :alt => "Sample App", :class => "round" ) %>
 
-				<nav class="round"
+				<nav class="round"> 
 					<ul>
 						<li><%= link_to "Home", '#' %></li>	
 						<li><%= link_to "Help", '#' %></li>	
 						<li><%= link_to "Sign in", '#' %></li>	
 					</ul>
-
+				</nav>
 			</header>
 			<section class="round">
 				<%=  yield %>
