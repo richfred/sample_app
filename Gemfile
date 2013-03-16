@@ -11,6 +11,7 @@ group :development do
 	gem 'rspec-rails'
 	gem 'webrat', '0.7.1'
 	gem 'sqlite3'
+	gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :production do 
