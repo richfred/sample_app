@@ -7,6 +7,7 @@
 #  email              :string(255)
 #  created_at         :datetime        not null
 #  updated_at         :datetime        not null
+#  salt               :string(255)
 #  encrypted_password :string(255)
 #
 

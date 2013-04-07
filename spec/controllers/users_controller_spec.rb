@@ -99,6 +99,6 @@ describe UsersController do
         post :create, :user => @attr
         flash[:success].should =~ /welcome to the sample app/i
       end
-     end
+    end     
   end
 end
