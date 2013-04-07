@@ -37,6 +37,6 @@ RSpec.configure do |config|
   config.order = "random"
 
   def test_sign_in(user)
-    controller.current_user = user
+    controller.sign_in(user)
   end
 end
