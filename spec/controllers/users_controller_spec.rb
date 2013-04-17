@@ -163,7 +163,7 @@ describe UsersController do
 
       it "should change the user's attributes " do
         put :update, :id => @user, :user => @attr
-        user = assigns(:user)
+        user = assigns(:user) 
         @user.reload
         @user.name.should == user.name
         @user.email.should == user.email

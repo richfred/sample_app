@@ -41,7 +41,8 @@ class UsersController < ApplicationController
    private
 
     def authenticate
-      flash[:notice] = "Please sign in to access this page."
-      redirect_to signin_path unless signed_in?
+      deny_access unless signed_in?
     end
+
+
 end
